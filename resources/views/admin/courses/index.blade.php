@@ -6,8 +6,8 @@
         <h3 class="page-title">Course</h3>
         @can('course_create')
         <p >
-            <a href="{{ route('admin.courses.create') }}" class="btn btn-success">Add New</a>
-            
+            <a href="{{ route('admin.courses.create') }}" class="btn btn-success">Ajouter un cours</a>
+
         </p>
         @endcan
    </div>
@@ -18,7 +18,7 @@
             <li><a href="{{ route('admin.courses.index') }}?show_deleted=1" style="{{ request('show_deleted') == 1 ? 'font-weight: 700' : '' }}">Trash</a></li>
         </ul>
     </p>
-    
+
     <div class="card">
         <div class="card-header">
             Course
@@ -34,11 +34,11 @@
                             </th>
                             @if(auth()->user()->isAdmin())
                             <th>
-                                Teacher Name
+                                Enseignant
                             </th>
                             @endif
                             <th>
-                                Title
+                                Titre
                             </th>
                             <th>
                                 Slug
@@ -47,16 +47,16 @@
                                 Description
                             </th>
                             <th>
-                                Price
+                                Prix
                             </th>
                             <th>
-                                Course Image
+                                Image description
                             </th>
                             <th>
-                                Start Date
+                                Date de creation
                             </th>
                             <th>
-                                Published
+                            Publier
                             </th>
                             <th>
                                 Action
@@ -108,7 +108,7 @@
                                     @method('delete')
                                     <button type="submit" class="btn btn-xs btn-danger" >Delete</button>
                                     </form>
-                                @else 
+                                @else
                                     <a class="btn btn-xs btn-info" href="{{ route('admin.courses.edit', $course->id) }}">
                                         Edit
                                     </a>
@@ -122,7 +122,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <td class="text-center" colspan="10">Not found !</td>
+                        <td class="text-center" colspan="12">Aucune donnéen est trouvé</td>
                         </tr>
                         @endforelse
                     </tbody>

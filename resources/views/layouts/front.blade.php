@@ -22,22 +22,22 @@
     <header class="header" id="header">
       <div class="nav container">
         <a href="{{ route('home') }}" class="nav-logo">
-        <i class='bx bx-compass'></i> BERAJAH
+        <i class='bx bx-compass'></i> Apprentisage
         </a>
 
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="{{ route('home') }}" class="nav-link">Home</a>
+              <a href="{{ route('home') }}" class="nav-link">Acceuil</a>
             </li>
             <li class="nav-item">
-              <a href="{{ route('courses.index') }}" class="nav-link">Course</a>
+              <a href="{{ route('courses.index') }}" class="nav-link">Cours</a>
             </li>
             @auth
               @if(auth()->user()->isAdmin())
                 <li class="nav-item">
                   <a href="{{ route('admin.courses.index') }}" class="nav-link">Admin</a>
-                </li> 
+                </li>
               @endif
             @endauth
           </ul>
@@ -66,7 +66,7 @@
             </ul>
          @endauth
 
-         @guest 
+         @guest
          <ul class="nav-list nav-account" style="margin-top: 1rem">
                 <li class="nav-item" style="width: 100%; text-align: center">
                 <a
@@ -96,8 +96,8 @@
           <i class="bx bx-moon change-theme" id="theme-button"></i>
           @guest
           <div class="btn-account">
-            <a href="{{ route('login') }}" class="btn btn-login">Login</a>
-            <a href="{{ route('register') }}" class="btn btn-register">Register</a>
+            <a href="{{ route('login') }}" class="btn btn-login">Connexion</a>
+            <a href="{{ route('register') }}" class="btn btn-register">Creer-compte</a>
           </div>
           @endguest
           @auth
@@ -117,8 +117,8 @@
     <div class="dropdown" id="dropdown">
       <i class="bx bx-x dropdown-close" id="dropdown-close"></i>
 
-      <a href="{{ route('courses.index') }}"><h2 class="dropdown-title-center">My Course</h2></a>
-      <a href="#" onclick="getElementById('logout').submit()"><h2 class="dropdown-title-center">Logout</h2></a>
+      <a href="{{ route('courses.index') }}"><h2 class="dropdown-title-center">Mes cours</h2></a>
+      <a href="#" onclick="getElementById('logout').submit()"><h2 class="dropdown-title-center">Deconnexion</h2></a>
       <form id="logout" action="{{ route('logout') }}" method="post">
           @csrf
       </form>

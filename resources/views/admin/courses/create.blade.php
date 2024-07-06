@@ -62,7 +62,7 @@
                 @endif
             </div>
             <div class="form-group {{ $errors->has('slug') ? 'has-error' : '' }}">
-                <label for="course_image">Course Image*</label>
+                <label for="course_image">Cours Image*</label>
                 <input type="file" id="course_image" name="course_image" class="form-control" value="{{ old('course_image', isset($course) ? $course->course_image : '') }}" required />
                 @if($errors->has('slug'))
                     <em class="invalid-feedback">
@@ -71,7 +71,7 @@
                 @endif
             </div>
             <div class="form-group {{ $errors->has('slug') ? 'has-error' : '' }}">
-                <label for="start_date">Start Date*</label>
+                <label for="start_date">Date</label>
                 <input type="date" id="start_date" name="start_date" class="form-control" value="{{ old('start_date', isset($course) ? $course->start_date : '') }}" required />
                 @if($errors->has('slug'))
                     <em class="invalid-feedback">
@@ -80,7 +80,7 @@
                 @endif
             </div>
             <div class="form-group {{ $errors->has('slug') ? 'has-error' : '' }}">
-                <label for="published">Published*</label>
+                <label for="published">Publier*</label>
                 <select name="published" class="form-control" id="published">
                     <option value="1">Active</option>
                     <option value="0">In Active</option>
@@ -93,7 +93,7 @@
             </div>
 
             <div>
-                <button class="btn btn-danger" type="submit" >Save</button>
+                <button class="btn btn-danger" type="submit" >Valider</button>
             </div>
         </form>
     </div>

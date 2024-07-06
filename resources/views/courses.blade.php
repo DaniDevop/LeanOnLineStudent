@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="products section container" id="course">
-        <h2 class="section-title">My Course</h2>
+        <h2 class="section-title">Mes cours</h2>
 
         <div class="featured-container grid">
             @forelse($purchased_courses as $purchased_course)
@@ -41,7 +41,7 @@
       </section>
 
     <section class="products section container" id="course">
-        <h2 class="section-title">All Course</h2>
+        <h2 class="section-title">Tous les cours</h2>
 
         <div class="new-container">
           <div class="swiper new-swipper">
@@ -76,7 +76,7 @@
               </a>
               </article>
             @endforeach
-    
+
             </div>
             <div
               class="swiper-button-next"

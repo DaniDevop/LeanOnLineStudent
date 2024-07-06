@@ -6,8 +6,8 @@
         <h3 class="page-title">Lesson</h3>
         @can('lesson_create')
         <p >
-            <a href="{{ route('admin.lessons.create') }}" class="btn btn-success">Add New</a>
-            
+            <a href="{{ route('admin.lessons.create') }}" class="btn btn-success">Ajouter-une-leçon</a>
+
         </p>
         @endcan
    </div>
@@ -32,19 +32,19 @@
                             #
                         </th>
                         <th>
-                            Course
+                            Cours
                         </th>
                         <th>
-                            Title
+                            Titre
                         </th>
                         <th>
                             Position
                         </th>
                         <th>
-                            Free Lesson
+                           Gratuit/Payant
                         </th>
                         <th>
-                            Published
+                           Publier
                         </th>
                         <th>
                             Action
@@ -97,7 +97,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td class="text-center" colspan="12">Data Not Found!</td>
+                        <td class="text-center" colspan="12">Aucune donnéen est trouvé</td>
                     </tr>
                     @endforelse
                 </tbody>

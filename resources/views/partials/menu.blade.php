@@ -14,7 +14,7 @@
             <li class="nav-item">
                 <a href="{{ route('admin.courses.index') }}" class="nav-link {{ request()->is('admin/courses') || request()->is('admin/courses/*') ? 'active' : '' }}">
                     <i class="fas fa-gift nav-icon"></i>
-                    Courses
+                    Cours
                 </a>
             </li>
             @endcan
@@ -22,7 +22,7 @@
             <li class="nav-item">
                 <a href="{{ route('admin.lessons.index') }}" class="nav-link {{ request()->is('admin/lessons') || request()->is('admin/lessons/*') ? 'active' : '' }}">
                     <i class="fas fa-gift nav-icon"></i>
-                    Lesson
+                    Leçon
                 </a>
             </li>
             @endcan
@@ -30,7 +30,7 @@
             <li class="nav-item">
                 <a href="{{ route('admin.tests.index') }}" class="nav-link {{ request()->is('admin/tests') || request()->is('admin/tests/*') ? 'active' : '' }}">
                     <i class="fas fa-gift nav-icon"></i>
-                    Test
+                    Evaluation
                 </a>
             </li>
             @endcan
@@ -38,7 +38,7 @@
             <li class="nav-item">
                 <a href="{{ route('admin.questions.index') }}" class="nav-link {{ request()->is('admin/questions') || request()->is('admin/questions/*') ? 'active' : '' }}">
                     <i class="fas fa-gift nav-icon"></i>
-                    Question
+                    Questions
                 </a>
             </li>
             @endcan
@@ -54,7 +54,7 @@
             <li class="nav-item">
                 <a href="{{ route('admin.users.index') }}" class="nav-link {{ request()->is('admin/users') || request()->is('admin/users/*') ? 'active' : '' }}">
                     <i class="fas fa-gift nav-icon"></i>
-                    User
+                   Utilisateur
                 </a>
             </li>
             @endcan
@@ -63,10 +63,10 @@
                     <i class="nav-icon fas fa-fw fa-sign-out-alt">
 
                     </i>
-                    Logout
+                   Deconnexion
                 </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="post">
-                    @csrf 
+                    @csrf
                 </form>
             </li>
         </ul>

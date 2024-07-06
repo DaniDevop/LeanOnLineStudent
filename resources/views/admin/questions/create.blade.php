@@ -82,10 +82,10 @@
                     </div>
                 </div>
             </div>
-            @endfor
-           
+            @endform;
+
             <div>
-                <button class="btn btn-danger" type="submit" >Save</button>
+                <button class="btn btn-danger" type="submit" >Valider</button>
             </div>
         </form>
     </div>

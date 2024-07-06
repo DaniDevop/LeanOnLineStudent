@@ -6,8 +6,8 @@
         <h3 class="page-title">Test</h3>
         @can('test_create')
         <p >
-            <a href="{{ route('admin.tests.create') }}" class="btn btn-success">Add New</a>
-            
+            <a href="{{ route('admin.tests.create') }}" class="btn btn-success">Ajouter-une-évaluation</a>
+
         </p>
         @endcan
    </div>
@@ -32,19 +32,19 @@
                             #
                         </th>
                         <th>
-                            Course
+                            Cours
                         </th>
                         <th>
-                            Lesson
+                            Leçon
                         </th>
                         <th>
-                            Title
+                            Titre
                         </th>
                         <th>
                             Description
                         </th>
                         <th>
-                            Published
+                            Publier
                         </th>
                         <th>
                             Action
@@ -87,7 +87,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td class="text-center" colspan="12">Data Not Found!</td>
+                    <td class="text-center" colspan="12">Aucune donnéen est trouvé</td>
                     </tr>
                     @endforelse
                 </tbody>

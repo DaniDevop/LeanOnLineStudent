@@ -10,7 +10,7 @@
         <form action="{{ route('admin.tests.store') }}" method="POST">
             @csrf
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-                <label for="course_id">Course*</label>
+                <label for="course_id">Cours*</label>
                 <select name="course_id" class="form-control" id="teacher" >
                     @foreach($courses as $id => $course)
                         <option value="{{ $id }}">{{ $course }}</option>
@@ -23,7 +23,7 @@
                 @endif
             </div>
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-                <label for="lesson_id">Lesson*</label>
+                <label for="lesson_id">Leçon*</label>
                 <select name="lesson_id" class="form-control" id="lesson_id" >
                     @foreach($lessons as $id => $lesson)
                         <option value="{{ $id }}">{{ $lesson }}</option>
@@ -36,7 +36,7 @@
                 @endif
             </div>
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-                <label for="title">title*</label>
+                <label for="title">titre*</label>
                 <input type="text" id="title" name="title" class="form-control" value="{{ old('title', isset($test) ? $test->title : '') }}" required>
                 @if($errors->has('title'))
                     <em class="invalid-feedback">
@@ -56,7 +56,7 @@
                 @endif
             </div>
             <div class="form-group {{ $errors->has('published') ? 'has-error' : '' }}">
-                <label for="published">Published*</label>
+                <label for="published">Publier*</label>
                 <select name="published" class="form-control" id="published">
                     <option value="1">Active</option>
                     <option value="0">In Active</option>
@@ -68,7 +68,7 @@
                 @endif
             </div>
             <div>
-                <button class="btn btn-danger" type="submit" >Save</button>
+                <button class="btn btn-danger" type="submit" >Valider</button>
             </div>
         </form>
     </div>
